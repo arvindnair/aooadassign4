@@ -1,0 +1,42 @@
+// $Id: assignment4.mpc 378 2010-02-07 22:09:38Z hillj $
+
+
+project (assignment4) {
+   specific (make) {
+    requires += cpp11
+    compile_flags += -std=c++11
+  }
+ exename = assignment4
+ 
+install = .
+ 
+ 
+ Source_Files {
+    
+driver.cpp
+Expr_Node.cpp
+Binary_Node.cpp
+Add_Node.cpp
+Subtract_Node.cpp
+Multiply_Node.cpp
+Divide_Node.cpp
+Modulus_Node.cpp
+Number_Node.cpp
+Expr_Node_Visitor.cpp
+Eval_Expr_Tree.cpp
+Expr_Evaluator.cpp
+Expr_Builder.cpp
+Expr_Tree_Builder.cpp
+Unary_Node.cpp
+Expr_Node_Factory.cpp
+Tree_Expr_Node_Factory.cpp
+
+}
+
+  
+Template_Files {
+Array.cpp
+Stack.cpp
+}
+
+}
